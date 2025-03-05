@@ -18,7 +18,9 @@ export default function Home({ posts }) {
       <ul>
         {posts.map(post => (
           <li key={post.id}>
-            <a href={`/posts/${post.id}`}>{post.title}</a>
+            <a href={`/posts/${post.id}`} style={{ color: 'purple' }}>
+              {post.title}
+            </a>
           </li>
         ))}
       </ul>
